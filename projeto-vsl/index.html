@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto Anti-Fungos</title>
+    
+    <!-- Scripts de pré-carregamento -->
+    <link rel="preload" href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-a745-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/thumbnail.jpg" as="image">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            background: black;
+        }
+        
+        .video-placeholder {
+            color: white;
+            text-align: center;
+            padding: 50px;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Produto Anti-Fungos</h1>
+    </header>
+
+    <main>
+        <!-- VÍDEO -->
+        <section class="video-container">
+            <vturb-smartplayer
+                id="vid-6827adf6562de3934a876ad4"
+                style="display: block; margin: 0 auto; width: 100%; max-width: 800px; min-height: 400px;">
+                <div class="thumbnail" style="position: relative; width: 100%; padding: 56.25% 0 0; z-index: 0;">
+                    <img class="thumbnail-image" 
+                         src="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/thumbnail.jpg"
+                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </vturb-smartplayer>
+            
+            <!-- Mensagem de fallback -->
+            <div class="video-placeholder" style="display: none;">
+                <h3>📹 Vídeo Carregando...</h3>
+                <p>Se o vídeo não aparecer em alguns segundos, recarregue a página.</p>
+            </div>
+        </section>
+
+        <!-- PARTES QUE VÃO APARECER DEPOIS -->
+        <div data-delay>
+            <!-- Suas seções de Kits, Garantia e FAQ aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Script do Player -->
+    <script>
+        // Carrega o script do player
+        function loadPlayerScript() {
+            var script = document.createElement('script');
+            script.src = 'https://scripts.converteai.net/bff5868f-b8e9-4bb4-a745-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js';
+            script.async = true;
+            document.head.appendChild(script);
+            
+            // Mostra placeholder se demorar muito
+            setTimeout(function() {
+                var player = document.querySelector('vturb-smartplayer');
+                if (!player || !player.shadowRoot) {
+                    document.querySelector('.video-placeholder').style.display = 'block';
+                }
+            }, 5000);
+        }
+        
+        // Tenta carregar quando a página estiver pronta
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadPlayerScript);
+        } else {
+            loadPlayerScript();
+        }
+    </script>
+
+    <!-- Script de Delay -->
+    <style>[data-delay] { display: none; }</style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Função para simular o aparecimento das seções (para teste)
+            function simulateDelay() {
+                setTimeout(function() {
+                    document.querySelector('[data-delay]').style.display = 'block';
+                }, 10000); // 10 segundos para teste
+            }
+            
+            // Tenta conectar com o player real
+            const player = document.querySelector("vturb-smartplayer");
+            if (player) {
+                player.addEventListener("player:ready", function() {
+                    console.log("Player pronto!");
+                });
+            }
+            
+            // Inicia simulação para teste
+            simulateDelay();
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

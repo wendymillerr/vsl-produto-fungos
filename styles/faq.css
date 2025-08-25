@@ -1,0 +1,143 @@
+.faq-section {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    padding: 1.5rem 4rem 1.5rem 1.5rem; 
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    list-style: none;
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '';
+    position: absolute;
+    right: 1.5rem;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/arrow_icon.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(180deg); 
+}
+.faq-answer {
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.faq-answer p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #04D85A;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 18px 24px; 
+    width: 100%;        
+    max-width: 400px;   
+    margin: 20px auto;  
+    height: auto;      
+    border-radius: 50px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.order-button:hover {
+    background-color: #2FB164;
+}
+
+.order-button .cart-icon {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .faq-item summary {
+        padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+    }
+    .faq-item summary::after {
+        right: 1.2rem;
+    }
+}
+
+@media (max-width: 936px) and (min-width: 480px) {
+    .faq-item summary {
+        padding: 1.3rem 3.8rem 1.3rem 1.3rem;
+        font-size: 1.08rem;
+    }
+    
+    .faq-item summary::after {
+        right: 1.4rem;
+        width: 19px;
+        height: 19px;
+    }
+    
+    .faq-list {
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 748px) {
+    .faq-item summary {
+        padding: 1.2rem 3.2rem 1.2rem 1.2rem;
+        font-size: 1.05rem;
+    }
+    .faq-item summary::after {
+        right: 1.1rem;
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-item summary {
+        padding: 0.8rem 2.5rem 0.8rem 1rem;
+    }
+    .faq-item summary::after {
+        right: 0.8rem;
+    }
+}

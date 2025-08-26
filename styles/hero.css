@@ -10,11 +10,13 @@
     background-image: 
         url('/images/spray_image.svg'), 
         linear-gradient(to bottom, #1B5F8B 80%, #3584B6 100%);
-    background-position: 80% center, center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% auto, cover;
 
-    background-blend-mode: overlay; 
+    background-size: cover, cover;
+
+    background-position: left center, center;
+
+    background-blend-mode: overlay;
 }
 
 

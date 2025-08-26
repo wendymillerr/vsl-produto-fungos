@@ -14,11 +14,7 @@
     text-align: center;
 }
 
-.guarantee-product-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 .guarantee-content {
     max-width: 500px;
@@ -66,12 +62,7 @@
         width: 150px;
     }
     
-    .guarantee-badge {
-        width: 80px;
-        top: 80px;
-        left: 120px;
-    }
-    
+  
     .guarantee-title {
         font-size: 1.8em;
     }
@@ -93,11 +84,7 @@
         width: 140px;
     }
     
-    .guarantee-badge {
-        width: 70px;
-        top: 70px;
-        left: 110px;
-    }
+
     
     .guarantee-title {
         font-size: 1.6em;
@@ -126,12 +113,7 @@
         width: 120px;
     }
     
-    .guarantee-badge {
-        width: 60px;
-        top: 60px;
-        left: 90px;
-    }
-    
+  
     .guarantee-title {
         font-size: 1.4em;
     }
@@ -141,10 +123,13 @@
     }
 }
 
+
+
+
 .product-images-container {
     position: relative;
     width: 260px;  
-    height: 280px;
+    height: 300px;
     flex-shrink: 0; 
 }
 
@@ -177,8 +162,8 @@
 .guarantee-badge {
     position: absolute;
     width: 100px;
-    top: 100px;
-    left: 150px;
+    top: 130px;
+    left: 170px;
     z-index: 3;
 }
 

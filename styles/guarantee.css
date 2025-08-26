@@ -32,7 +32,8 @@
 }
 
 .guarantee-text {
-    font-size: 1em;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     margin-bottom: 30px;
     overflow: visible; 
@@ -90,9 +91,7 @@
         font-size: 1.6em;
     }
     
-    .guarantee-content {
-        max-width: 400px;
-    }
+   
 }
 
 
@@ -118,9 +117,7 @@
         font-size: 1.4em;
     }
     
-    .guarantee-text {
-        font-size: 0.9em;
-    }
+   
 }
 
 
@@ -133,9 +130,7 @@
     flex-shrink: 0; 
 }
 
-.guarantee-content {
-    max-width: 500px; 
-}
+
 
 .guarantee-product-image {
     position: absolute;

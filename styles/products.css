@@ -1,6 +1,6 @@
 .products-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 5px 20px;
     background-color: #f0f2f5; 
 }
 
@@ -18,7 +18,7 @@
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex-basis: 300px;
-    height: 806;
+    min-height: 806px;
     max-width: 100%;
     position: relative;
     border: 2px solid #3584B6; 
@@ -28,7 +28,7 @@
     border-color: #25A794; 
     background-color: #FAFCF1; 
     margin-top: -30px;
-    height: 858px;
+    min-height: 858px;
 }
 
 .product-badge {
@@ -66,6 +66,15 @@
     .product-card.order-3 { order: 3; } 
 }
 
+@media (max-width: 768px) {
+  .product-card,
+  .product-card.featured {
+    height: auto !important;      
+    min-height: auto !important;  
+  }
+}
+
+
 .offer-header {
     text-align: center; 
     margin-bottom: 30px; 
@@ -81,6 +90,8 @@
 .offer-subtitle {
     font-size: 24px; 
     color: #000000;
+   // font-family: 'Inter', sans-serif;
+   font-weight: 200;
 }
 
 .products-section .product-card .add-to-cart {
@@ -182,19 +193,24 @@
 
 .price {
     font-size: 64px; 
-    font-weight: bold;
+    font-weight: 700;
     color: #000000;
     line-height: 1; 
 }
 
 .unit {
     font-size:24px; 
-    color: #666;
+    color: #454447;
     line-height: 1;
 }
 
 .shipping-cost span {
     color: #EB8E21; 
+    font-weight: 400;
+}
+.shipping-cost  {
+    font-weight : 500;
+    color: #000000;
 }
 
 .features-list {
@@ -207,8 +223,9 @@
     position: relative;
     padding-left: 30px; 
     margin-bottom: 15px;
-    font-size: 1.1em;
-    color: #444;
+    font-size: 15pxPX;
+    font-weight: 500;
+    color: #414141;
     text-align: center;
     border: 1px dotted #25A794; 
     padding: 5px; 
@@ -225,7 +242,9 @@
 .testimonials-container {
     text-align: center; 
     margin-top: 50px;
-    padding: 20px;
+    padding: 5px 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
 
 .testimonials-title {
@@ -247,6 +266,11 @@
     font-size: 24px;
     font-weight: bold;
     color: #25A794;
+}
+
+.rating-number,
+.reviews-number {
+    font-weight: 700; 
 }
 
  @media (max-width: 768px) {

@@ -94,3 +94,15 @@
 }
 
 
+@media (max-width: 768px) {
+    .video-container h1 {
+        font-size: 28px; 
+        line-height: 1.2; 
+    }
+
+    .hero-section {
+        padding: 40px 10px; 
+        height: auto; 
+        flex-direction: column; 
+    }
+}
